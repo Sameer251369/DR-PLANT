@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sameer Bashir - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      width: 100vw;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+      background: 
+        linear-gradient(rgba(25, 34, 54, 0.35), rgba(25, 34, 54, 0.35)),
+        url('ilya-pavlov-OqtafYT5kTw-unsplash.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+    .main-content {
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      width: 100vw;
+      /* Dark-Light-Dark effect */
+      background: linear-gradient(
+        to bottom,
+        rgba(30,36,54,0.92) 0%,
+        rgba(241,246,250,0.0) 50%,
+        rgba(30,36,54,0.92) 100%
+      );
+      box-shadow: 0 0 0 100vmax rgba(30,36,54,0.15) inset;
+      position: relative;
+    }
+    .hopeless{
+      color: #1976d2;
+      font-weight: 600 ;
+      font-size: 1.3rem;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      object-position: top; /* Show the top part of the image (hair) */
+      border-radius: 50%;
+      border: 5px solid #e0e0e0;
+      margin-bottom: 22px;
+      margin-top: 70px; /* Increased to move image further down */
+      box-shadow: 0 2px 12px rgba(0,0,0,0.17);
+      background: #f5f5f5;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      aspect-ratio: 1 / 1;    /* Ensures perfect circle even if image is not square */
+    }
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.4rem;
+      letter-spacing: 1px;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.25);
+    }
+    p {
+      margin: 0 0 22px 0;
+      color: #e0e0e0;
+      font-size: 1.2rem;
+      text-align: center;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+    .qualification, .skills {
+      background: rgba(30,36,54,0.92);
+      border-radius: 12px;
+      padding: 18px 16px;
+      color: #fff;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 400px;
+      margin: 18px auto 0 auto;
+      text-align: left;
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .qualification h2, .skills h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.13rem;
+      color: #1976d2;
+      letter-spacing: 0.5px;
+    }
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #fff;
+    }
+    .skills-list li {
+      margin-bottom: 6px;
+      padding-left: 1.2em;
+      position: relative;
+    }
+    .skills-list li:before {
+      content: "•";
+      color: #1976d2;
+      position: absolute;
+      left: 0;
+    }
+    .contact {
+      margin-top: 32px;
+      background: rgba(30,36,54,0.92);
+      border-radius: 12px;
+      padding: 20px 14px;
+      font-size: 1.05rem;
+      color: #fff;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 340px;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid rgba(255,255,255,0.07);
+    }
+    .contact h2 {
+      margin: 0 0 12px 0;
+      font-size: 1.13rem;
+      color: #90caf9;
+      letter-spacing: 0.5px;
+    }
+    .contact a {
+      color: #90caf9;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .contact div {
+      margin-bottom: 7px;
+    }
+    .buttons {
+      margin: 26px 0 32px 0;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      width: 100%;
+    }
+    .buttons a, .buttons button {
+      background: #1976d2;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 18px;
+      font-size: 0.98rem;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      font-weight: 600;
+      box-shadow: 0 2px 10px rgba(25,118,210,0.09);
+      text-decoration: none;
+      display: inline-block;
+    }
+    .buttons a:hover, .buttons button:hover {
+      background: #1253a4;
+      transform: translateY(-2px) scale(1.04);
+    }
+    footer {
+      flex-shrink: 0;
+      text-align: center;
+      padding: 18px 0 10px 0;
+      color: #eee;
+      font-size: 0.98rem;
+      background: transparent;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    }
+    @media (max-width: 700px) {
+      .profile-img {
+        width: 100px;
+        height: 100px;
+      }
+      .qualification, .skills, .contact {
+        padding: 14px 4vw;
+        max-width: 95vw;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main-content" style="position:relative;">
+      <!-- Side profile image (left) -->
+    
+      <!-- Main profile image (center) -->
+      <img 
+        src="kkkk.jpg"
+        alt="Sameer Bashir"
+        class="profile-img"
+      />
+      <h1>Sameer Bashir</h1>
+      <p>Full Stack Developer | Engineer</p>
+      <!-- Optionally, show the image again below the skills section -->
+      <!--
+      <div style="margin: 32px 0;">
+        <img 
+          src="1758981196417.jpg"
+          alt="Sameer Bashir"
+          style="width:180px; height:180px; object-fit:cover; border-radius:16px; box-shadow:0 2px 12px rgba(0,0,0,0.18);"
+        />
+      </div>
+      -->
+      <div class="qualification">
+        <h2>Qualification</h2>
+        <div>
+          <strong>B.Tech in Computer Science & Engineering</strong><br>
+          University of Kashmir<br>
+          2021 &ndash; 2025
+        </div>
+      </div>
+      <div class="skills">
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+          <li>Frontend: React.js, HTML5, CSS3, JavaScript, Python, Tailwind CSS</li>
+          <li>Backend: Node.js, Express.js, Django, Flask, FastAPI</li>
+          <li>RESTful APIs & WebSockets</li>
+          <li>Databases: MongoDB, MySQL</li>
+          <li>Version Control: Git & GitHub</li>
+          <li>Deployment: Vercel, Netlify, Heroku</li>
+          <li>Problem Solving</li>
+        </ul>
+      </div>
+      <p class="hopeless"> Click on the buttons </p>
+      <div class="buttons">
+      
+        <a href="projects.html">Projects</a>
+        <a href="Sameer_Bashir_Resume26.pdf" target="_blank">Resume</a>
+        <a href="certifications.html">Certifications</a>
+      </div>
+      <div class="contact">
+        <h2>Contact Details</h2>
+        <div>Email: <a href="mailto:sameerbashir522@gmail.com">sameerbashir522@gmail.com</a></div>
+        <div>Phone: <a href="tel:+916005349142">+91 6005349142</a></div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/sameer-bashir-9953b9308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">sameerbashir</a></div>
+        <div>Banglore, Karnataka, India</div>
+      </div>
+  </div>
+  <footer>
+    &copy; 2025 Sameer Bashir. All rights reserved.
+  </footer>
+</body>
+</html>

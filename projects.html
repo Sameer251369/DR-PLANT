@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sameer Bashir - Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      min-height: 100vh;
+      font-family: roboto, 'Segoe UI', Arial, sans-serif;
+      color: #e0e0e0;
+      background: 
+        linear-gradient(rgba(25, 34, 54, 0.92), rgba(25, 34, 54, 0.92)),
+        url('ilya-pavlov-OqtafYT5kTw-unsplash.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(30, 36, 54, 0.96);
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+      padding: 36px 24px 28px 24px;
+    }
+    h1 {
+      text-align: center;
+      color: #90caf9;
+      margin-bottom: 36px;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.22);
+    }
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+    }
+    .project-card {
+      background: #23293a;
+      border-radius: 14px;
+      box-shadow: 0 2px 10px rgba(25,118,210,0.13);
+      padding: 22px 18px 18px 18px;
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .project-card:hover {
+      box-shadow: 0 6px 24px rgba(25,118,210,0.23);
+      transform: translateY(-4px) scale(1.03);
+    }
+    .project-img {
+      width: 90%;
+      height: 160px;
+      background: #1a2233;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap:10px;
+      font-size: 1.1rem;
+      color: #888;
+      overflow: hidden;
+    }
+    .project-title {
+      font-size: 1.25rem;
+      color: #90caf9;
+      margin-bottom: 10px;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+    .project-desc {
+      color: #cfd8dc;
+      font-size: 1rem;
+      text-align: left;
+      width: 100%;
+    }
+    .project-desc ul {
+      color: #b0bec5;
+      margin-bottom: 0;
+    }
+    .project-desc a {
+      color: #64b5f6;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    .project-desc a:hover {
+      color: #1976d2;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 32px;
+      text-align: center;
+      color: #90caf9;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.05rem;
+      border-radius: 6px;
+      padding: 8px 18px;
+      background: #23293a;
+      transition: background 0.2s, color 0.2s;
+      box-shadow: 0 1px 6px rgba(25,118,210,0.08);
+    }
+    .back-link:hover {
+      background: #1976d2;
+      color: #fff;
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 16px 2vw 18px 2vw;
+      }
+      .projects-list {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+      }
+      .project-card {
+        width: 95vw;
+        max-width: 340px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Projects</h1>
+    <div class="projects-list">
+      <!-- Agro AI first -->
+      <div class="project-card">
+        <div class="project-img">
+          <img src="Screenshot 2025-09-30 175201.png" alt="Agro AI" style="width:100%;height:100%;object-fit:cover;border-radius:10px;display:block;" onerror="this.style.display='none';this.parentNode.textContent='[Image Here]';">
+          <img src="Screenshot 2025-09-30 174619.png" alt="Agro AI" style="width:100%;height:100%;object-fit:cover;border-radius:10px;display:block;" onerror="this.style.display='none';this.parentNode.textContent='[Image Here]';">
+        </div>
+        <div class="project-title">Agro AI</div>
+        <div class="project-desc">
+          Revolutionizing agriculture with artificial intelligence.<br><br>
+          <strong>Highlights:</strong>
+          <ul style="text-align:left; margin: 8px 0 0 18px; padding:0;">
+            <li>AI-driven crop health analysis and disease detection</li>
+            <li>Smart recommendations for fertilizers and irrigation</li>
+            <li>Easy-to-use dashboard for farmers and agronomists</li>
+            <li>Real-time weather and soil data integration</li>
+            <li>Built with modern web technologies for speed and reliability</li>
+          </ul>
+          <br>
+          <a href="https://sameer251369.github.io/plant-ai/" target="_blank">&#128187; See Project Live!</a>
+        </div>
+      </div>
+
+   
+      <div class="project-card">
+        <div class="project-img">
+          <img src="Screenshot 2025-09-30 194204.png" alt="game" style="width:100%;height:100%;object-fit:cover;border-radius:10px;display:block;" onerror="this.style.display='none';this.parentNode.textContent='[Image Here]';">
+        </div>
+        <div class="project-title">SPACE CRAFT GAME</div>
+        <div class="project-desc">
+         ✈️ V-Wing Fighter – Space Shooter Game<br><br>
+          <strong>Features:</strong>
+          <ul style="text-align:left; margin: 8px 0 0 18px; padding:0;">
+            <li>Designed an interactive HTML, CSS, and JavaScript game featuring a space fighter</li>
+            <li>increasing enemy waves<b>sound effects, scoring system, and game-over mechanics.</b></li>
+            <li>Added collision detection between bullets, enemies, and player aircraft.</li>
+            <li>Built a scoring and high-score system with local storage.</li>
+            <li>Implemented game-over and restart mechanics when player hits enemies.</b></li>
+            <li>Showcases front-end development, problem-solving, and game design skills.</b></li>
+          </ul>
+          <br>
+          <a href="https://sameer251369.github.io/space-craft/" target="_blank">&#128187; See Project Live!</a>
+        </div>
+      </div>
+    </div>
+    <a class="back-link" href="index.html">&larr; Back to Portfolio</a>
+  </div>
+</body>
+</html>
